@@ -11,6 +11,7 @@ export const ApplicationUrls = {
         login :  envUrlAppends.baseApi + 'login',
     },
     user: {
-        signup : envUrlAppends.baseApi + 'signup'
+        signup : envUrlAppends.baseApi + 'signup',
+        profile: envUrlAppends.baseApi + 'profile/',
     }
 };

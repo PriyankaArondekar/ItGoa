@@ -14,7 +14,7 @@ export class ProfileComponent implements OnInit {
     ngOnInit() {}
 
     open() {
-        const modalRef = this.modalService.open(ProfileDialogComponent);
+        const modalRef = this.modalService.open(ProfileDialogComponent, {size: 'lg'});
         modalRef.componentInstance.name = 'World';
       }
 }

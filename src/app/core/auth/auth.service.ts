@@ -27,10 +27,13 @@ export class AuthService {
   }
 
   getLoggedInUser() {
+    console.log('sto',localStorage.getItem('loginuser'));
     const user = JSON.parse(localStorage.getItem('loginuser'));
+    console.log(user);
     return user ? user : null;
 }
   getUserToken() {
+    console.log('token',localStorage.getItem('token'));
     const token = localStorage.getItem('token');
     if (token !== null && token !== '') {
         return token;

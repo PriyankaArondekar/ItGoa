@@ -46,6 +46,8 @@ export class LoginComponent implements OnInit {
 
         if (res &&  res.code === 200) {
           localStorage.setItem('token', res.token );
+          console.log(res.data);
+          localStorage.setItem('loginuser', JSON.stringify(res.data) );
           this.router.navigate(['user-profile']);
         }
       },
